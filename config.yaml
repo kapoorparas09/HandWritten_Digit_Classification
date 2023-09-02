@@ -7,6 +7,9 @@ params:
   metrics: accuracy
   optimizer: SGD
   validation_data_size: 5000
+  patience: 5
+  restore_best_weights: True
+  save_best_only: True
 
 artifacts:
   artifacts_dir: artifacts
@@ -19,4 +22,4 @@ artifacts:
 logs:
   logs_dir: logs_dir
   general_logs: general_logs
-  tensorboard_logs: tensorboard_logs
+  TensorBoard_Root_Log_Dir: tensorboard_logs
